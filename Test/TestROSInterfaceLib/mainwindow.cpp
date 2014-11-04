@@ -48,11 +48,8 @@ void MainWindow::triggerSubSlot()
 
 void MainWindow::receiveMessageSlot()
 {
-    ROSSub<turtlesim::Pose>::ROSSubMsgPtr msgptr=rossub->getMessagePtr();
-    if(msgptr!=NULL)
-    {
-        QString msg=QString("%1, %2, %3\n").arg(msgptr->x).arg(msgptr->y).arg(msgptr->theta);
-        ui->pose->insertPlainText(msg);
-        ui->pose->moveCursor(QTextCursor::End);
-    }
+    turtlesim::Pose msgptr=rossub->getMessage();
+    QString msg=QString("%1, %2, %3\n").arg(msgptr.x).arg(msgptr.y).arg(msgptr.theta);
+    ui->pose->insertPlainText(msg);
+    ui->pose->moveCursor(QTextCursor::End);
 }
