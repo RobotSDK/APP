@@ -42,3 +42,7 @@ unix {
     LIBS += -L/opt/ros/indigo/lib -lrosconsole_backend_interface
     LIBS += -L/usr/lib/x86_64-linux-gnu -lboost_system
 }
+
+PROJNAME = TestROSInterfaceLib
+INSTTYPE = APP
+include(RobotSDK_Main.pri)
