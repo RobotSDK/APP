@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    CalibrateCameraChessboard * calibration=new CalibrateCameraChessboard("/usb_cam/image_raw",cv::Size2f(0.035,0.035),cv::Size2i(8,6));
+    CalibrateROSCameraChessboard * calibration=new CalibrateROSCameraChessboard("/usb_cam/image_raw",cv::Size2f(0.035,0.035),cv::Size2i(8,6));
     ui->tabWidget->addTab(calibration,"Calibration");
 
     connect(ui->grab,SIGNAL(clicked()),calibration,SLOT(grabCalibDataSlot()));
