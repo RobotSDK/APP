@@ -7,10 +7,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    rospub=new ROSPub<geometry_msgs::Twist>("turtle1/cmd_vel",1000,"Control1");
+    QString nodename="";
+
+    rospub=new ROSPub<geometry_msgs::Twist>("turtle1/cmd_vel",1000);
     connect(ui->pub,SIGNAL(clicked()),this,SLOT(sendMessageSlot()));
 
-    rossub=new ROSSub<turtlesim::Pose>("turtle1/pose",1000,10,"Control1");
+    rossub=new ROSSub<turtlesim::Pose>("turtle1/pose",1000,10);
     connect(ui->sub,SIGNAL(clicked()),this,SLOT(triggerSubSlot()));
     connect(this,SIGNAL(startSubSignal()),rossub,SLOT(startReceiveSlot()));
     connect(this,SIGNAL(stopSubSignal()),rossub,SLOT(stopReceiveSlot()));
