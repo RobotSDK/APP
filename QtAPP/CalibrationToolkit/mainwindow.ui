@@ -18,16 +18,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QPushButton" name="grab">
+       <widget class="QPushButton" name="load">
         <property name="text">
-         <string>Grab</string>
+         <string>Load</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="calibrate">
+       <widget class="QPushButton" name="save">
         <property name="text">
-         <string>Calibrate</string>
+         <string>Save</string>
         </property>
        </widget>
       </item>
@@ -45,16 +45,16 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="load">
+       <widget class="QPushButton" name="grab">
         <property name="text">
-         <string>Load</string>
+         <string>Grab</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="save">
+       <widget class="QPushButton" name="calibrate">
         <property name="text">
-         <string>Save</string>
+         <string>Calibrate</string>
         </property>
        </widget>
       </item>
