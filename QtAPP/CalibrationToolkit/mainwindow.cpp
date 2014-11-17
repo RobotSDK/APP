@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->calibrate,SIGNAL(clicked()),calibration,SLOT(calibrateSensorSlot()));
     connect(ui->load,SIGNAL(clicked()),calibration,SLOT(loadCalibResultSlot()));
     connect(ui->save,SIGNAL(clicked()),calibration,SLOT(saveCalibResultSlot()));
+    connect(ui->Project,SIGNAL(clicked()),calibration,SLOT(projectVelodynePointsSlot()));
+    connect(ui->refresh,SIGNAL(clicked()),calibration,SLOT(refreshParametersSlot()));
 }
 
 MainWindow::~MainWindow()
