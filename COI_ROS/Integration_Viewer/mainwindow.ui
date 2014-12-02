@@ -50,6 +50,9 @@
       </item>
       <item>
        <widget class="QTableWidget" name="inputs">
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
         <row>
          <property name="text">
           <string>0</string>
@@ -72,7 +75,7 @@
         </item>
         <item row="1" column="0">
          <property name="text">
-          <string>Algorithm_Localization_NDT3D</string>
+          <string>Sensor_Camera</string>
          </property>
         </item>
        </widget>
@@ -96,7 +99,7 @@
         <item>
          <widget class="QLineEdit" name="nodeclass">
           <property name="text">
-           <string>Algorithm_Integration_VelodyneNDT3D</string>
+           <string>Algorithm_Integration_VelodyneCamera</string>
           </property>
          </widget>
         </item>
