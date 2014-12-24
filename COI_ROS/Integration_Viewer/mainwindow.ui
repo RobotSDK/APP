@@ -70,7 +70,7 @@
         </column>
         <item row="0" column="0">
          <property name="text">
-          <string>Sensor_Velodyne</string>
+          <string>Algorithm_Segmentation_Velodyne</string>
          </property>
         </item>
         <item row="1" column="0">
@@ -99,7 +99,7 @@
         <item>
          <widget class="QLineEdit" name="nodeclass">
           <property name="text">
-           <string>Algorithm_Integration_VelodyneCamera</string>
+           <string>Algorithm_Integration_SegmentationCamera</string>
           </property>
          </widget>
         </item>

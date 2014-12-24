@@ -56,4 +56,5 @@ FORMS    += mainwindow.ui
 
 PROJNAME = VelodyneCameraDPM
 INSTTYPE = APP
+
 include(RobotSDK_Main.pri)

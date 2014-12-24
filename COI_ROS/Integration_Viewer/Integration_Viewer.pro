@@ -56,4 +56,5 @@ FORMS    += mainwindow.ui
 
 PROJNAME = Integration_Viewer
 INSTTYPE = APP
+
 include(RobotSDK_Main.pri)

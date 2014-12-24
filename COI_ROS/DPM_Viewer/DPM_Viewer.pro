@@ -56,4 +56,5 @@ FORMS    += mainwindow.ui
 
 PROJNAME = DPM_Viewer
 INSTTYPE = APP
+
 include(RobotSDK_Main.pri)

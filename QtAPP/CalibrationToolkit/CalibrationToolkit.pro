@@ -58,4 +58,5 @@ unix{
 
 PROJNAME = CalibrationToolkit
 INSTTYPE = APP
+
 include(RobotSDK_Main.pri)

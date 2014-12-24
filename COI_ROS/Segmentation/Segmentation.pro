@@ -57,4 +57,5 @@ FORMS    += mainwindow.ui
 
 PROJNAME = Segmentation
 INSTTYPE = APP
+
 include(RobotSDK_Main.pri)
